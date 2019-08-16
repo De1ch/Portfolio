@@ -725,7 +725,7 @@ textarea.form-control {
 }
 
 .grid h2 {
-	color: white;
+  color: white;
   font-size: 20px;
 }
 
@@ -751,8 +751,8 @@ textarea.form-control {
 }
 
 .grid figure figcaption {
-	background-color: rgba(44, 62, 80, 0.4);
-background-image: url("../images/pattern.png");
+  background-color: rgba(44, 62, 80, 0.4);
+  background-image: url("../images/pattern.png");
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
@@ -798,16 +798,17 @@ background-image: url("../images/pattern.png");
 .grid figure p {
   margin: 0;
 }
+
 /* else use discription (p)
 .grid figure h2,
 .grid figure p {
   margin: 30px 0;
 } */
-
 .grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
+
 /*---------------*/
 /***** Bubba *****/
 /*---------------*/
