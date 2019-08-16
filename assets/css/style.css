@@ -1,12 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
-
-/*!
- * Clean v2.0.0
- * Homepage: http://scripteden.com
- * Copyright 2015 Script Eden
- * Licensed under MIT
-*/
 body {
   font: 300 14px/1.8 'Raleway', sans-serif;
   color: #666;
@@ -287,51 +278,6 @@ textarea.form-control {
   font-size: 32px;
 }
 
-.calltoaction * {
-  text-align: center;
-}
-
-.calltoaction {
-  background: url(../images/item-3.jpg);
-  background-color: #222;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding: 50px 0;
-  color: #999;
-}
-
-.calltoaction h2 {
-  font-size: 20px;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-}
-
-.calltoaction-decription {
-  padding-top: 20px;
-  padding-bottom: 30px;
-  font-size: 20px;
-  color: #fff;
-}
-
-.calltoaction-btn {
-  text-align: center;
-}
-
-.calltoaction-btn>.btn {
-  background: rgba(255, 255, 255, .8);
-  color: #111;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.calltoaction-btn>.btn:hover {
-  background: #fff;
-}
-
 .long-down {
   margin-bottom: 40px;
 }
@@ -389,29 +335,6 @@ textarea.form-control {
   text-transform: none;
   margin: 15px 0;
 }
-
-/* ---------------------------------------------- /*
- * Servise
-/* ---------------------------------------------- */
-.iconbox {
-  background: #fff;
-  border-bottom: 1px solid #d4d4d4;
-  text-align: center;
-  padding: 40px 20px;
-  margin: 0 0 20px;
-}
-
-.iconbox-icon {
-  margin: 0 0 15px;
-  font-size: 32px;
-  color: #222;
-}
-
-.iconbox-title {
-  margin: 0 0 15px;
-  padding: 0;
-}
-
 /* ---------------------------------------------- /*
  * Skills
 /* ---------------------------------------------- */
@@ -663,73 +586,7 @@ footer .copyright span:last-child::after {
   color: #e7746f;
 }
 
-/* ---------------------------------------------- /*
- *Scroll Down
-/* ---------------------------------------------- */
-.scroll-down {
-  position: absolute;
-  left: 50%;
-  bottom: 40px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  margin-left: -15px;
-  display: block;
-  z-index: 10;
-  text-align: center;
-}
 
-.scroll-down span {
-  position: relative;
-  color: #fff;
-  -webkit-animation-name: drop;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-play-state: running;
-  animation-name: drop;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-delay: 0s;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-}
-
-@-webkit-keyframes drop {
-  0% {
-    top: 0px;
-    opacity: 0;
-  }
-
-  30% {
-    top: 10px;
-    opacity: 1;
-  }
-
-  100% {
-    top: 25px;
-    opacity: 0;
-  }
-}
-
-@keyframes drop {
-  0% {
-    top: 0px;
-    opacity: 0;
-  }
-
-  30% {
-    top: 10px;
-    opacity: 1;
-  }
-
-  100% {
-    top: 25px;
-    opacity: 0;
-  }
-}
 
 /* ---------------------------------------------- /*
  * Preloader
@@ -891,95 +748,4 @@ footer .copyright span:last-child::after {
   -webkit-transform: translateX(-4px);
   transform: translateX(-4px);
   transition: 0.5s;
-}
-
-/*-----------------------*/
-/***** Quote Rotator *****/
-/*-----------------------*/
-.cbp-qtrotator {
-  position: relative;
-  margin: 3em auto 0em auto;
-  max-width: 90%;
-  width: 90%;
-}
-
-.cbp-qtrotator .cbp-qtcontent {
-  position: absolute;
-  min-height: 200px;
-  border-top: 1px solid #f4f4f4;
-  border-bottom: 1px solid #f4f4f4;
-  padding: 2em 0;
-  top: 0;
-  z-index: 0;
-  opacity: 0;
-  width: 100%;
-}
-
-.no-js .cbp-qtrotator .cbp-qtcontent {
-  border-bottom: none;
-}
-
-.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
-.no-js .cbp-qtrotator .cbp-qtcontent {
-  position: relative;
-  z-index: 100;
-  pointer-events: auto;
-  opacity: 1;
-}
-
-.cbp-qtrotator .cbp-qtcontent:before,
-.cbp-qtrotator .cbp-qtcontent:after {
-  content: " ";
-  display: table;
-}
-
-.cbp-qtrotator .cbp-qtcontent:after {
-  clear: both;
-}
-
-.cbp-qtprogress {
-  position: absolute;
-  background: #FF5252;
-  height: 1px;
-  width: 0%;
-  top: 0;
-  z-index: 1000;
-}
-
-.cbp-qtrotator blockquote {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 12px;
-}
-
-.cbp-qtrotator blockquote p {
-  font-size: 2em;
-  color: #888;
-  font-weight: 300;
-  margin: 0.4em 0 1em;
-}
-
-.cbp-qtrotator blockquote footer {
-  font-size: 1.2em;
-}
-
-.cbp-qtrotator blockquote footer:before {
-  content: '― ';
-}
-
-.cbp-qtrotator .cbp-qtcontent img {
-  float: right;
-  margin-left: 3em;
-}
-
-/* Example for media query */
-@media screen and (max-width: 30.6em) {
-  .cbp-qtrotator {
-    font-size: 70%;
-  }
-
-  .cbp-qtrotator img {
-    width: 80px;
-  }
 }
