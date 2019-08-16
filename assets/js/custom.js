@@ -6,7 +6,7 @@
 
 	$(window).load(function() {
 		$('#status').fadeOut();
-		$('#preloader').delay(800).fadeOut('slow');
+		$('#preloader').delay(800).fadeOut('fast');
 	});
 
 	$(document).ready(function() {
