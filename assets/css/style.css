@@ -606,11 +606,12 @@ footer .copyright span:last-child::after {
 .navbar-custom .navbar-nav>li.active a {
   background: none;
   outline: 0;
+  font-weight: bold
   color: #E7746F;
 }
 
 .navbar-custom .navbar-brand {
-  font-weight: 700;
+  font-weight: bold
   font-size: 22px;
   font-family: Lobster, cursive;
 }
