@@ -597,6 +597,7 @@ footer .copyright span:last-child::after {
   font-size: 11px;
   letter-spacing: 3px;
   color: black;
+  font-weight: bold;
 }
 
 .navbar-custom .nav li.active,
