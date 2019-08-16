@@ -596,7 +596,7 @@ footer .copyright span:last-child::after {
 .navbar-custom .navbar-nav .dropdown-menu>li>a {
   font-size: 11px;
   letter-spacing: 3px;
-  color: #222;
+  color: black;
 }
 
 .navbar-custom .nav li.active,
@@ -631,7 +631,7 @@ footer .copyright span:last-child::after {
 }
 
 .navbar-custom .navbar-toggle .icon-bar {
-  background: #222;
+  background: black;
 }
 
 /* ---------------------------------------------- /*
