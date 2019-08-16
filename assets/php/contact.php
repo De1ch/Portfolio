@@ -5,10 +5,10 @@ if(isset($_POST['message'])){
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
-    
-	
-	$to      = 'you@example.com';
-	$subject = 'Site Contact Form';
+
+
+	$to      = 'work.deich@example.com';
+	$subject = 'Обратная связь';
 
 	$headers = 'From: '. $email . "\r\n" .
     'Reply-To: '. $email . "\r\n" .
@@ -16,17 +16,17 @@ if(isset($_POST['message'])){
 
 	$status = mail($to, $subject, $message, $headers);
 
-	if($status == TRUE){	
-		$res['sendstatus'] = 'done';
-	
+	if($status == TRUE){
+		$res['sendstatus'] = 'Готово!';
+
 		//Edit your message here
-		$res['message'] = 'Form Submission Successful';
+		$res['message'] = 'Отправка сообщения прошла успешно!';
     }
 	else{
-		$res['message'] = 'Failed to send mail. Please mail me to you@example.com';
+		$res['message'] = 'Не удалось отправить сообщение, пожалуйста попробуйте позже.';
 	}
-	
-	
+
+
 	echo json_encode($res);
 }
 

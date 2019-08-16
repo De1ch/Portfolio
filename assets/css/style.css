@@ -24,7 +24,6 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #999;
 }
 
 /* ---------------------------------------------- /*
@@ -58,6 +57,14 @@ a,
 .navbar-custom .dropdown-menu {
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.pfblock-subtitle {
+  font: 500 40px/1.9 Raleway, sans-serif;
+}
+
+.pfblock-subtitle a, font {
+  border-bottom: 1px dotted black;
 }
 
 /* ---------------------------------------------- /*
@@ -135,12 +142,12 @@ h6 {
 .form-control {
   background: #FFF;
   border: 1px solid #D8E1E4;
-  font-size: 12px;
+  font-size: 15px;
   padding: 0 15px;
 }
 
 .form-control:focus {
-  border-color: rgba(135, 135, 135, 0.7);
+  border-color: #ff5252;
 }
 
 .input-lg,
@@ -185,13 +192,13 @@ textarea.form-control {
 .btn-group-lg>.btn {
   padding: 10px 25px;
   font-size: 13px;
-  background: rgba(17, 17, 17, 0.8);
+  background: #ff5252;
   color: #fff;
 }
 
 .btn-lg:hover,
 .btn-group-lg>.btn:hover {
-  background: rgba(17, 17, 17, 1.8);
+  background: #fba2a2;
   color: #fff;
 }
 
@@ -451,55 +458,114 @@ textarea.form-control {
 /* ---------------------------------------------- /*
  * Footer
 /* ---------------------------------------------- */
-#footer {
-  background: #222;
-  text-align: center;
-  padding: 40px 0;
-  color: #FFF;
+footer {
+	padding-bottom: 3rem;
+	font-size: 1.4rem;
+	font-family: "poppins-regular", sans-serif;
+}
+footer a, footer a:visited {
+	color: #666;
+}
+footer a:hover, footer a:focus {
+	color: #FF0077;
+}
+footer .row {
+	max-width: 900px;
+}
+footer .social {
+	text-align: right;
+}
+footer .footer-social {
+	display: inline-block;
+	font-size: 2.1rem;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -.3rem;
+}
+footer .footer-social li {
+	display: inline-block;
+	margin: 0 12px;
+	padding: 0;
+}
+footer .footer-social li a {
+	color: #666;
+}
+footer .copyright span {
+	display: inline-block;
+}
+footer .copyright span::after {
+	content: "|";
+	display: inline-block;
+	padding: 0 1rem 0 1.2rem;
+	color: #666;
+}
+footer .copyright span:last-child::after {
+	display: none;
 }
 
-.copyright {
-  margin: 0;
+/**
+ * responsive:
+ * footer
+ * -------------------------------------------------------------------
+ */
+@media only screen and (max-width:768px) {
+	footer {
+		text-align: center;
+	}
+	footer .social {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 1.5rem;
+	}
+	footer .copyright span {
+		display: block;
+	}
+	footer .copyright span::after {
+		display: none;
+	}
 }
 
-.copyright a {
-  border-bottom: 1px dotted #fff;
+.copyright a{
+  border-bottom: 1px dotted black;
 }
 
-#footer span {
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  color: #ff5252;
+/**
+ * go to top - (_layout.scss)
+ * -------------------------------------------------------------------
+ */
+#go-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 600;
+	display: none;
 }
-
-.social-links {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px;
+#go-top a {
+	text-decoration: none;
+	border: 0 none;
+	display: block;
+	height: 6.6rem;
+	width: 6rem;
+	line-height: 6.6rem;
+	text-align: center;
+	background: #cc005f;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
-
-.social-links li {
-  display: inline-block;
-  margin: 5px;
+#go-top a i {
+	font-size: 1.6rem;
+	line-height: inherit;
 }
-
-.social-links a {
-  width: 36px;
-  height: 36px;
-  display: block;
-  line-height: 35px;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, .1);
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  font-size: 14px;
-  color: rgba(255, 255, 255, .2);
-}
-
-.social-links a:hover {
-  border: 1px solid rgba(255, 255, 255, .5);
-  color: rgba(255, 255, 255, .8);
+#go-top a:hover {
+	background: #666;
 }
 
 /* ---------------------------------------------- /*
