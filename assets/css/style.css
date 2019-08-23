@@ -708,6 +708,7 @@ footer .copyright span:last-child::after {
   width: 300px;
   height: 200px;
   text-align: right;
+  transition: 0.5s;
 }
 
 .grid figure figcaption i:hover {
@@ -767,6 +768,11 @@ footer .copyright span:last-child::after {
 /*---------------*/
 /***** Bubba *****/
 /*---------------*/
+
+.effect-bubba {
+  transition: 0.5s;
+}
+
 .effect-bubba:hover {
   box-shadow:
     1px 1px #e7746f,
