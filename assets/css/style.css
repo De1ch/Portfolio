@@ -335,6 +335,7 @@ textarea.form-control {
   text-transform: none;
   margin: 15px 0;
 }
+
 /* ---------------------------------------------- /*
  * Skills
 /* ---------------------------------------------- */
@@ -382,49 +383,59 @@ textarea.form-control {
  * Footer
 /* ---------------------------------------------- */
 footer {
-	padding-bottom: 3rem;
-	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
+  padding-bottom: 3rem;
+  font-size: 1.4rem;
+  font-family: "poppins-regular", sans-serif;
 }
+
 footer a, footer a:visited {
-	color: #666;
+  color: #666;
 }
+
 footer a:hover, footer a:focus {
-	color: #FF0077;
+  color: #FF0077;
 }
+
 footer .row {
-	max-width: 900px;
+  max-width: 900px;
 }
+
 footer .social {
-	text-align: right;
+  text-align: right;
 }
+
 footer .footer-social {
-	display: inline-block;
-	font-size: 2.1rem;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	top: -.3rem;
+  display: inline-block;
+  font-size: 2.1rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: -.3rem;
 }
+
 footer .footer-social li {
-	display: inline-block;
-	margin: 0 12px;
-	padding: 0;
+  display: inline-block;
+  margin: 0 12px;
+  padding: 0;
 }
+
 footer .footer-social li a {
-	color: #666;
+  color: #666;
 }
+
 footer .copyright span {
-	display: inline-block;
+  display: inline-block;
 }
+
 footer .copyright span::after {
-	content: "|";
-	display: inline-block;
-	padding: 0 1rem 0 1.2rem;
-	color: #666;
+  content: "|";
+  display: inline-block;
+  padding: 0 1rem 0 1.2rem;
+  color: #666;
 }
+
 footer .copyright span:last-child::after {
-	display: none;
+  display: none;
 }
 
 /**
@@ -433,24 +444,27 @@ footer .copyright span:last-child::after {
  * -------------------------------------------------------------------
  */
 @media only screen and (max-width:768px) {
-	footer {
-		text-align: center;
-	}
-	footer .social {
-		display: block;
-		width: 100%;
-		text-align: center;
-		margin-bottom: 1.5rem;
-	}
-	footer .copyright span {
-		display: block;
-	}
-	footer .copyright span::after {
-		display: none;
-	}
+  footer {
+    text-align: center;
+  }
+
+  footer .social {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  footer .copyright span {
+    display: block;
+  }
+
+  footer .copyright span::after {
+    display: none;
+  }
 }
 
-.copyright a{
+.copyright a {
   border-bottom: 1px dotted black;
 }
 
@@ -459,36 +473,39 @@ footer .copyright span:last-child::after {
  * -------------------------------------------------------------------
  */
 #go-top {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: 600;
-	display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 600;
+  display: none;
 }
+
 #go-top a {
-	text-decoration: none;
-	border: 0 none;
-	display: block;
-	height: 6.6rem;
-	width: 6rem;
-	line-height: 6.6rem;
-	text-align: center;
-	background: #cc005f;
-	color: #FFFFFF;
-	text-align: center;
-	text-transform: uppercase;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border: 0 none;
+  display: block;
+  height: 6.6rem;
+  width: 6rem;
+  line-height: 6.6rem;
+  text-align: center;
+  background: #cc005f;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
+
 #go-top a i {
-	font-size: 1.6rem;
-	line-height: inherit;
+  font-size: 1.6rem;
+  line-height: inherit;
 }
+
 #go-top a:hover {
-	background: #666;
+  background: #666;
 }
 
 /* ---------------------------------------------- /*
@@ -586,8 +603,6 @@ footer .copyright span:last-child::after {
   color: #e7746f;
 }
 
-
-
 /* ---------------------------------------------- /*
  * Preloader
 /* ---------------------------------------------- */
@@ -683,6 +698,21 @@ footer .copyright span:last-child::after {
   font-size: 1.25em;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+
+.grid figure figcaption i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 300px;
+  height: 200px;
+  text-align: right;
+}
+
+.grid figure figcaption i:hover {
+  color: #E7746F;
+  outline: 0;
+  transition: 0.5s;
 }
 
 .grid figure figcaption::before,
