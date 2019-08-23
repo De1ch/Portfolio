@@ -702,6 +702,7 @@ footer .copyright span:last-child::after {
 
 .grid figure figcaption i {
   position: absolute;
+  font-size: 15px;
   top: 10px;
   right: 10px;
   width: 300px;
